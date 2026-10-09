@@ -1,70 +1,54 @@
 # 🌐 Windows IP and Network Manager
 
-Interactive menu for inspecting and managing Windows network adapters, IP settings, and MAC address operations.
+<div align="center">
 
-[![Português (Brasil)](https://img.shields.io/badge/DOCUMENTA%C3%87%C3%83O-PORTUGU%C3%8AS%20(BRASIL)-green?style=for-the-badge)](README.md) [![Documentation](https://img.shields.io/badge/DOCUMENTATION-ENGLISH-0070F3?style=for-the-badge)](README-EN.md)
+**🌐 Idiomas / Languages:**  
+[![Documentação PT-BR](https://img.shields.io/badge/Documenta%C3%A7%C3%A3o-Portugu%C3%AAs%20(Brasil)-green?style=for-the-badge)](README.md)
+[![Documentation EN](https://img.shields.io/badge/Documentation-English-0070F3?style=for-the-badge)](README-EN.md)
 
-![Version](https://img.shields.io/badge/Version-v1.0.0-blue?style=flat-square) ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square) ![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square) ![Languages](https://img.shields.io/badge/Languages-10%20auto--detected-2ea44f?style=flat-square)
+![Version](https://img.shields.io/badge/Version-v1.0.0-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D4?style=for-the-badge)
+![Languages](https://img.shields.io/badge/Languages-10%20Native-2ea44f?style=for-the-badge)
 
-[Portuguese changelog](CHANGELOG-PT-BR.md) · [English changelog](CHANGELOG-EN.md) · [MIT License](LICENSE)
+</div>
 
 ---
-## Files
 
-Windows-IP-Manager.ps1
-Session-Header.ps1
-Ip-UI-Catalog.json
+Advanced interactive PowerShell manager for network adapters, IPv4 routing, DNS providers, DHCP lease renewals, and MAC address operations.
 
-## Usage
+## 🚀 Key Features
+- **DHCP / Static IP Toggling:** Configure static IP, Gateway, and popular DNS servers (Cloudflare, Google, OpenDNS) or revert to DHCP.
+- **MAC Address Management:** Generate, customize, or restore hardware MAC address on supported adapters.
+- **DHCP Lease Renewal:** Seamless release/renew cycles with ARP and DNS resolver cache flushes.
+- **Multilingual Catalog:** 10 built-in languages via `Ip-UI-Catalog.json`.
 
-1. Download or clone the complete repository.
-2. Run `Windows-IP-Manager.ps1` in Windows PowerShell. It loads `Session-Header.ps1` and `Ip-UI-Catalog.json` from the same folder. Approve the UAC prompt when requested.
+## 📦 Usage
+1. Download from [Releases](https://github.com/Emertels/Windows-IP-Manager/releases/latest).
+2. Run `Windows-IP-Manager.ps1` in PowerShell as Administrator.
+3. Select your network adapter and execute desired configurations from the menu.
 
-## Requirements
-
-Windows 10 or Windows 11 and Windows PowerShell 5.1. Adapter and IP changes require administrator privileges; winget is not required.
-
-## Menu options
-
-Verify the adapter before changing settings. **1 — Force new IP:** changes MAC when supported and requests a DHCP address. **2 — Renew DHCP:** releases/renews the lease and clears DNS/ARP. **3 — IPv4:** A sets a static IP, mask, gateway, and DNS; B returns to DHCP. **4 — Information:** displays adapters and network details. **5 — MAC:** generate, enter, or restore an address where hardware allows. **6 — Diagnostics:** tests gateway, Internet, and DNS. **7 — Repair network:** clears DNS/ARP and resets Winsock/TCP/IP; connectivity may drop. **0 — Exit.** Record current settings; drivers may reject MAC changes.
-
-### Available languages
-
-Detected from Windows settings; Brazilian Portuguese is the fallback.
-
-| Language | Locale | Typical system |
-|---|---|
-| Brazilian Portuguese | pt-BR | Brazilian Windows; also the fallback language. |
-| English | en | English Windows. |
-| Spanish | es | Spanish Windows. |
-| French | fr | French Windows. |
-| German | de | German Windows. |
-| Italian | it | Italian Windows. |
-| Japanese | ja | Japanese Windows. |
-| Korean | ko | Korean Windows. |
-| Simplified Chinese | zh-CN | Simplified Chinese Windows. |
-| Russian | ru | Russian Windows. |
-
+---
 ## 👨‍💻 About the Author
 
 Developed and maintained by **Emerson Teles** (known in the community as **Emertels**).
 
-Technology, computing, gaming, system maintenance, and software translation/localization enthusiast. Focused on practical utilities, productivity tools, intelligent PowerShell automation, and technical localization solutions that make modern tools more accessible to Brazilian users.
+Technology, computing, gaming, and system maintenance enthusiast dedicated to software localization into Brazilian Portuguese (PT-BR). Developer focused on practical utilities, productivity tools, intelligent PowerShell automation, and complete technical localization solutions that make modern software accessible to Brazilian users.
 
 ### 🛠️ Projects & Contributions
 
-- [AI-Chat-Vault](https://github.com/Emertels/AI-Chat-Vault) — Portable backup and recovery for local conversations from 20+ AI tools and assistants.
-- [Antigravity — Brazilian Portuguese Translation](https://github.com/Emertels/Antigravity-Traducao-PTBR) — Complete localization of Google Antigravity Desktop into Brazilian Portuguese.
-- [Codex Router — Brazilian Portuguese Translation](https://github.com/Emertels/CodexRouter-Traducao-PTBR) — Translation and localization package for Codex Router Control Center.
-- [Cursor AI — Brazilian Portuguese Translation](https://github.com/Emertels/Cursor-Traducao-PTBR) — Complete, in-depth localization of Cursor AI into Brazilian Portuguese.
-- [GPU Tweak III — Brazilian Portuguese Translation](https://github.com/Emertels/GPU-Tweak-III-Traducao-PTBR) — Brazilian Portuguese translation and automated installer for ASUS GPU Tweak III.
-- [Microsoft Photos Fix](https://github.com/Emertels/Microsoft-Photos-Fix) — PowerShell and C# fix for startup routing and image viewing in Windows Photos.
-- [PSBBN-Translator](https://github.com/Emertels/PSBBN-Translator) — Localization suite for the PSBBN Definitive Project (PlayStation 2) in 40 languages.
-- [Silent Hill: Homecoming — Brazilian Portuguese Translation](https://github.com/Emertels/Silent-Hill-Homecoming-Traducao-PTBR) — Complete PC translation and review into Brazilian Portuguese.
-- [Suite-Emuladores](https://github.com/Emertels/Suite-Emuladores) — PowerShell suite for downloading and updating 56 emulators and frontends on Windows.
-- [ZCode — Brazilian Portuguese Translation](https://github.com/Emertels/ZCode-Traducao-PTBR) — Complete localization of ZCode Desktop into Brazilian Portuguese.
+- [AI-Chat-Vault](https://github.com/Emertels/AI-Chat-Vault) — Portable backup and recovery tool for local chat histories across 20+ AI assistants.
+- [Antigravity — PT-BR Translation](https://github.com/Emertels/Antigravity-Traducao-PTBR) — Complete Brazilian Portuguese localization package for Google Antigravity Desktop.
+- [Codex Router — PT-BR Translation](https://github.com/Emertels/CodexRouter-Traducao-PTBR) — Portable translation and localization package for Codex Router Control Center in PT-BR.
+- [Cursor AI — PT-BR Translation](https://github.com/Emertels/Cursor-Traducao-PTBR) — Deep Brazilian Portuguese localization and update suite for Cursor AI.
+- [GPU Tweak III — PT-BR Translation](https://github.com/Emertels/GPU-Tweak-III-Traducao-PTBR) — Full PT-BR translation and automated installer for ASUS GPU Tweak III.
+- [Microsoft Photos Fix](https://github.com/Emertels/Microsoft-Photos-Fix) — Advanced PowerShell & C# solution fixing fast route startup and photo viewing on Windows.
+- [PSBBN-Translator](https://github.com/Emertels/PSBBN-Translator) — Enterprise translation and localization suite for the PS2 PSBBN Definitive Project in 40 languages.
+- [Silent Hill: Homecoming — PT-BR Translation](https://github.com/Emertels/Silent-Hill-Homecoming-Traducao-PTBR) — Complete Brazilian Portuguese translation and revision for PC.
+- [Suite-Emuladores](https://github.com/Emertels/Suite-Emuladores) — Intelligent PowerShell suite for automated downloads and updates of 56 game emulators & frontends on Windows.
+- [ZCode — PT-BR Translation](https://github.com/Emertels/ZCode-Traducao-PTBR) — Full Brazilian Portuguese visual translation and localization for ZCode Desktop.
 
-### 🌐 Connect with me & Official Communities
+### 🌐 Connect with Me & Official Communities
 
 <div align="left">
 
@@ -74,6 +58,6 @@ Technology, computing, gaming, system maintenance, and software translation/loca
 [![X / Twitter](https://img.shields.io/badge/X_Twitter-@emertels-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/emertels)
 [![YouTube](https://img.shields.io/badge/YouTube-Emerson_Teles-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@emersonteles2379)
 [![Telegram](https://img.shields.io/badge/Telegram-Aplicativos%20Mods-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/apksmodsandroid)
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support_the_Project-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white)](https://ko-fi.com/emertels)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20Project-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white)](https://ko-fi.com/emertels)
 
 </div>

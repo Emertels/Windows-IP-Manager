@@ -1,50 +1,37 @@
 # 🌐 Gerenciador de IP e Rede do Windows 🇧🇷
 
-Menu interativo para consultar e gerenciar adaptadores, configurações IP e operações de endereço MAC.
+<div align="center">
 
-[![Documentação](https://img.shields.io/badge/DOCUMENTA%C3%87%C3%83O-PORTUGU%C3%8AS%20(BRASIL)-green?style=for-the-badge)](README.md) [![Documentation](https://img.shields.io/badge/DOCUMENTATION-ENGLISH-0070F3?style=for-the-badge)](README-EN.md)
+**🌐 Idiomas / Languages:**  
+[![Documentação PT-BR](https://img.shields.io/badge/Documenta%C3%A7%C3%A3o-Portugu%C3%AAs%20(Brasil)-green?style=for-the-badge)](README.md)
+[![Documentation EN](https://img.shields.io/badge/Documentation-English-0070F3?style=for-the-badge)](README-EN.md)
 
-![Versão](https://img.shields.io/badge/Vers%C3%A3o-v1.0.0-blue?style=flat-square) ![Licença](https://img.shields.io/badge/Licen%C3%A7a-MIT-green?style=flat-square) ![Plataforma](https://img.shields.io/badge/Plataforma-Windows-0078D4?style=flat-square) ![Idiomas](https://img.shields.io/badge/Idiomas-10%20auto--detectados-2ea44f?style=flat-square)
+![Versão](https://img.shields.io/badge/Vers%C3%A3o-v1.0.0-blue?style=for-the-badge)
+![Licença](https://img.shields.io/badge/Licen%C3%A7a-MIT-green?style=for-the-badge)
+![Plataforma](https://img.shields.io/badge/Plataforma-Windows%2010%20%7C%2011-0078D4?style=for-the-badge)
+![Idiomas](https://img.shields.io/badge/Idiomas-10%20Nativos-2ea44f?style=for-the-badge)
 
-[Changelog PT-BR](CHANGELOG-PT-BR.md) · [English changelog](CHANGELOG-EN.md) · [Licença MIT](LICENSE)
+</div>
 
 ---
-## Arquivos
 
-Windows-IP-Manager.ps1
-Session-Header.ps1
-Ip-UI-Catalog.json
+Gerenciador avançado e interativo de adaptadores de rede, endereços IPv4, servidores DNS, concessões DHCP e operações de MAC Address no Windows 10 e 11.
 
-## Como usar
+## 🚀 Principais Recursos
+- **Alternância DHCP / IP Estático:** Configuração ágil de IP fixo e DNS populares (Cloudflare, Google, OpenDNS) ou retorno automático ao DHCP.
+- **Gestão de Endereço MAC:** Geração, configuração ou restauração do MAC de fábrica em placas suportadas.
+- **Renovação Cirúrgica de DHCP:** Liberação de concessões antigas e solicitação imediata de novo IP.
+- **Catálogo UI Multilíngue:** Interface completa em 10 idiomas com detecção automática do sistema.
 
-1. Baixe ou clone o repositório completo.
-2. Execute `Windows-IP-Manager.ps1` no Windows PowerShell. O script carrega `Session-Header.ps1` e `Ip-UI-Catalog.json` da mesma pasta. Aceite o UAC quando solicitado.
+## 📦 Como Usar
+1. Baixe o pacote na seção [Releases](https://github.com/Emertels/Windows-IP-Manager/releases/latest).
+2. Execute `Windows-IP-Manager.ps1` no PowerShell como Administrador.
+3. Escolha a ação desejada no menu numérico para gerenciar sua conexão.
 
-## Requisitos
+> [!TIP]
+> Caso precise de um novo endereço IP rapidamente em conexões via cabo/fibra, utilize a opção **1 — Forçar novo IP**.
 
-Windows 10 ou Windows 11 e Windows PowerShell 5.1. Alterações de adaptador e endereço IP exigem privilégios de administrador; winget não é necessário.
-
-## Opções do menu
-
-Confira o adaptador antes de aplicar mudanças. **1 — Forçar novo IP:** altera MAC quando suportado e tenta obter outro IP via DHCP. **2 — Renovar DHCP:** libera/renova a concessão e limpa DNS/ARP. **3 — IPv4:** A configura IP, máscara, gateway e DNS estáticos; B volta ao DHCP. **4 — Informações:** exibe adaptadores e dados de rede. **5 — MAC:** gerar, informar ou restaurar endereço, conforme suporte do hardware. **6 — Diagnóstico:** testa gateway, Internet e DNS. **7 — Reparar rede:** limpa DNS/ARP e redefine Winsock/TCP/IP; pode interromper conexão. **0 — Sair.** Anote configurações atuais; drivers podem não aceitar alteração de MAC.
-
-### Idiomas disponíveis
-
-Detectados pela configuração do Windows; PT-BR é o fallback.
-
-| Idioma | Código | Uso |
-|---|---|
-| Português (Brasil) | pt-BR | Interface PT-BR; também é o idioma alternativo. |
-| Inglês | en | Interface em inglês. |
-| Espanhol | es | Interface em espanhol. |
-| Francês | fr | Interface em francês. |
-| Alemão | de | Interface em alemão. |
-| Italiano | it | Interface em italiano. |
-| Japonês | ja | Interface em japonês. |
-| Coreano | ko | Interface em coreano. |
-| Chinês simplificado | zh-CN | Interface em chinês simplificado. |
-| Russo | ru | Interface em russo. |
-
+---
 ## 👨‍💻 Sobre o Autor
 
 Desenvolvido e mantido por **Emerson Teles** (conhecido na comunidade como **Emertels**).
